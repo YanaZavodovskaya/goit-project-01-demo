@@ -1,9 +1,16 @@
+.page-header {
+  position: absolute;
+  width: 100%;
+  padding-top: 8px;
+  top: 0;
+  left: 0;
+}
 .page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 8px;
-  background-color: #ffb8ca;
+  
+  
 }
 
 .page-header__navigation {
@@ -19,9 +26,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__container {
+  .page-header {
     padding-top: 32px;
   }
+
 
   .page-header__mobile-menu-btn {
     display: flex;
@@ -67,10 +75,10 @@
       display: flex;
       align-items: center;
     }
-
-    .page-header__container {
+    .page-header {
       padding-top: 37px;
     }
+
     .page-header__link {
       @include font(16px, 21px, 700);
       color: var(--text-color-theme-dark);
