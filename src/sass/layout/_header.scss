@@ -27,13 +27,12 @@
   .page-header__mobile-menu-btn {
     display: flex;
     justify-content: center;
+    @include font(16px, 21px, 700);
     width: 160px;
     height: 44px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+    
     text-align: center;
-    color: #d41443;
+    color: var(--primary-accent-color);
     background-color: #ffffff;
     border-radius: 22px;
     align-items: center;
@@ -64,11 +63,17 @@
       align-items: center;
 
     }
+
     .page-header__container {
       padding-top: 37px;
     }
-  
-    .page-header__link:not(:last-child) {
+        .page-header__link {
+          @include font(16px, 21px, 700);
+          color: var(--text-color-theme-dark);
+          
+
+        }
+    .page-header__item:not(:last-child) {
       margin-right: 35px;
     }
 
