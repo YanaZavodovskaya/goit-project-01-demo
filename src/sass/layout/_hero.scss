@@ -3,11 +3,12 @@
 }
 .hero__container {
   display: block;
+background-color: #ffb8ca;
 }
 .hero__titel {
   text-align: start;
-  display: block;
-  width: 218px;
+  display: inline-block;
+  
   font-family: var(--secondary-font-family);
   font-style: normal;
   @include font(26px, 30px, 400);
@@ -19,18 +20,22 @@
 }
 
 .hero__titel-pink {
+  
   text-align: start;
-  display: block;
+  display: inline-block;
   font-family: var(--secondary-font-family);
   font-style: normal;
   @include font(48px, 46px, 400);
   text-transform: uppercase;
   color: var(--primary-accent-color);
+  
 }
 
-.hero__container {
-  padding-top: 194px;
-  background-color: #ffb8ca;
+.hero__titel-wrapper {
+  padding-top: 193px;
+    max-width: 218px;
+    padding-bottom: 158px;
+
 }
 
 .hero__nav-list {
