@@ -18,7 +18,27 @@ how it’s made? - является заголовком секции.
     <h2 class="about__title">how it's made?</h2>
     <ul class="about-list">
         <li class="about-list__half">
-            <img class="about-img" src="../images/about-cow.png" width="501" height="501" alt="Корова и молоко">
+            <picture class="about__picture">
+                <source srcset="
+                      ./images/about/desktop-about-cow.png 1x,
+                      ./images/about/desktop-about-cow@2x.png 2x
+                    " media="(min-width: 1280px)" />
+                <source srcset="
+                        ./images/about/tablet-about-cow.png 1x,
+                        ./images/about/tablet-about-cow@2x.png 2x
+                        " media="(min-width: 768px)" />
+                <source srcset="
+                        ./images/about/mobile-about-cow.png 1x,
+                        ./images/about/mobile-about-cow@2x.png 2x
+                        " media="(max-width: 767px)" />
+                <img 
+                    src="./images/about/mobile-about-cow.png" 
+                    alt="Корова и молоко" 
+                    max-width="280"
+                    max-height="280" 
+                    class="about__img" 
+                />
+            </picture>
         </li>
         <li class="about-list__half">
             <p class="about-article-1">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
@@ -34,18 +54,3 @@ how it’s made? - является заголовком секции.
         </li>
     </ul>
 </section>
-
-<!-- <section class="about container">
-    <p class="about__subtitle">tradition and love</p>
-    <h2 class="about__title">how it's made?</h2>
-    <div class="about-img">
-        <img class="" src="../images/about-cow.png" width="501" height="501" alt="Корова и молоко">
-    </div>
-    <div class="about-txt">
-        <p class="about-article-1">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
-        Maecenas eleifend erat at justo fringilla.</p>
-        <p class="about-article-2">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
-        <p class="about-article-2">Aliquam erat volutpat. Aenean accumsan.</p>
-    </div>
-</section>  -->
