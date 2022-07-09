@@ -133,4 +133,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-accent-color);
+}
+
+.about-list {
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */
