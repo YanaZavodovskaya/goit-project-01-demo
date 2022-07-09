@@ -1,0 +1,22 @@
+.customer-reviews-container {
+    display: flex;
+    flex-direction: column;
+    width: 968px;
+    height: 350px;
+}
+
+.customer-reviews_photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 44px;
+    background-color: #757575;
+}
+
+.customer-reviews__reviews {
+    background-image: repeating-linear-gradient(#E1E1E1, #E1E1E1);
+}
+
+.customer-reviews_reviews::before {
+    content: "\275E";
+    color: #E1E1E1;
+}
