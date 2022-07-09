@@ -1,0 +1,51 @@
+.gallery {
+    min-height: 136px;
+    background-image: linear-gradient(to bottom,
+            #FFF5F6 20%,
+            var(--text-color-theme-dark) 20%);
+}
+
+.gallery__list {
+    @extend %align;
+    margin: -1px;
+}
+
+
+.gallery__picture {
+    display: block;
+    margin: 1px;
+}
+
+
+
+@media screen and(min-width:768px) {
+    .gallery {
+        height: 327px;
+
+    }
+
+    .gallery__list {
+
+        margin: -3px;
+    }
+
+    .gallery__picture {
+        margin: 3px;
+    }
+}
+
+@media screen and(min-width:1280px) {
+    .gallery {
+        height: 430px;
+
+    }
+
+    .gallery__list {
+        height: 430px;
+        margin: -4px;
+    }
+
+    .gallery__picture {
+        margin: 4px;
+    }
+}
