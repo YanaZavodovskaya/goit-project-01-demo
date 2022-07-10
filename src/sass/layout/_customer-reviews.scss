@@ -157,6 +157,11 @@
   margin-right: 18px;
 }
 
+.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
 
 .swiper-pagination-bullet-active {
   background-image: url(../images/customer/home.svg);
