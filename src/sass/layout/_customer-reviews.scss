@@ -22,7 +22,6 @@
   font-size: 12px;
   line-height: 255%;
   text-align: center;
-  // margin-top: 20%;
   z-index: 2;
   padding: 50px 0px;
 }
@@ -40,6 +39,7 @@
 }
 
 .customer-reviews__rows{
+  display: block;
   position: absolute;
   top: 74px;
   left: 10%;
@@ -48,6 +48,7 @@
   background-image: repeating-linear-gradient(#E1E1E1 0, #E1E1E1 1px, #FAFAFA 0, #FAFAFA 15%);
   margin-right: auto;
   margin-left: auto;
+    
     &::before {
       position: absolute;
       top: 0px;
@@ -74,6 +75,7 @@
   line-height: calc(26 / 14 * 100%);
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 480px) {
@@ -92,6 +94,7 @@
 @media screen and (min-width: 768px) {
   .customer-reviews__name {
       font-size: 16px;
+      margin-bottom: 32px;
   }
 
   .customer-reviews__reviews {
@@ -112,7 +115,7 @@
   
   .customer-reviews__reviews {
       font-size: 16px;
-      padding: 45px 100px 0px 100px;
+      padding: 45px 140px 0px 140px;
   }
 
   .customer-reviews__rows {
@@ -141,6 +144,17 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
+.swiper-pagination{
+  position: relative;
+  padding-bottom: 0;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child),
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px;
+}
+
 
 .swiper-pagination-bullet-active {
   background-image: url(../images/customer/home.svg);
