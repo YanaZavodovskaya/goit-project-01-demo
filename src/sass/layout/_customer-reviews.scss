@@ -95,6 +95,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .customer-reviews__photo {
+   margin-bottom: 20px;
+  }
+
   .customer-reviews__name {
       font-size: 16px;
       margin-bottom: 32px;
@@ -112,6 +116,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .customer-reviews__photo {
+    margin-bottom: 16px;
+   }
+
   .customer-reviews__name {
       font-size: 20px;
   }
