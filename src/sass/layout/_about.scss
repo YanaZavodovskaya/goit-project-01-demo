@@ -40,6 +40,7 @@
     text-align: left;
     color: #000000;
     margin-bottom: 40px;
+    width: 220px;
 }
 
 .about__half-article-2{
@@ -116,6 +117,7 @@
         @include font(14px, 24px);
         text-align: left;
         color: #000000;
+        width: 334px;
     }
 
     .about__half-article-2{
@@ -123,6 +125,7 @@
         @include font(14px, 24px);
         text-align: left;
         color: #907E82;
+        width: 334px;
     }
 
     .about-btn{
@@ -188,6 +191,7 @@
         text-align: left;
         margin-top: 90px;
         margin-bottom: 32px;
+        width: 463px;
         color: #000000;
     }
 
@@ -197,6 +201,7 @@
         text-align: left;
         margin-bottom: 40px;
         color: #907E82;
+        width: 463px;
     }
 
     .about-btn{
