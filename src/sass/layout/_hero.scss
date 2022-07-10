@@ -1,11 +1,79 @@
+.hero {
+  display: block;
+}
+.hero__container {
+  display: block;
+background-color: #ffb8ca;
+}
 .hero__titel {
-    font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 44px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: palevioletred;
+  text-align: start;
+  display: inline-block;
+  
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  @include font(26px, 30px, 400);
+
+  text-transform: uppercase;
+
+  color: var(--text-color-theme-dark);
+  margin-bottom: 20px;
+}
+
+.hero__titel-pink {
+  
+  text-align: start;
+  display: inline-block;
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  @include font(48px, 46px, 400);
+  text-transform: uppercase;
+  color: var(--primary-accent-color);
+  
+}
+
+.hero__titel-wrapper {
+  padding-top: 193px;
+    max-width: 218px;
+    padding-bottom: 158px;
 
 }
+
+.hero__nav-list {
+  display: flex;
+}
+
+.hero__nav-link {
+  font-family: var(--primary-font-family);
+  @include font(8px, 10px, 400);
+  display: inline-block;
+  background-color: var(--primary-accent-color);
+  border-radius: 20px;
+  padding: 9px 15px;
+  color: var(--text-color-theme-dark);
+
+    transition: background-color 300ms var(--primary-cubic-bezier), color 300ms var(--primary-cubic-bezier);
+
+  &:hover {
+    background-color: #ECEBEB;
+    color: var(--primary-accent-color);
+  }
+
+
+}
+
+.hero__nav-item .second-link {
+    color: var(--primary-accent-color);
+    background-color: var(--text-color-theme-dark);
+
+        transition: background-color 300ms var(--primary-cubic-bezier);
+        
+            &:hover {
+                background-color: #ECEBEB;
+            }
+    
+}
+
+.hero__nav-item:not(:last-child) {
+    margin-right: 8px;
+}
+
