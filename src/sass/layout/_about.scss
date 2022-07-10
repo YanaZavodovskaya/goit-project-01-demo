@@ -93,15 +93,16 @@
 
     .about__list{
         display: flex;
+        justify-content: space-between;
     }
 
-    .about__half{
-        margin-right: 32px;
-    }
+    // .about__half{
+    //     margin-right: 32px;
+    // }
 
-    .about__half:last-child{
-        margin-bottom: 0px;
-    }
+    // .about__half:last-child{
+    //     margin-bottom: 0px;
+    // }
 
     .about__half-article-1{
         font-family: var(--primary-font-family);
@@ -162,6 +163,7 @@
 
     .about__list{
         display: flex;
+        justify-content: space-between;
     }
 
     // .about__half{
@@ -177,7 +179,6 @@
         @include font(16px, 28px);
         text-align: left;
         margin-top: 90px;
-        margin-right: 121px;
         margin-bottom: 32px;
         color: #000000;
     }
@@ -186,7 +187,6 @@
         font-family: var(--primary-font-family);
         @include font(16px, 28px);
         text-align: left;
-        margin-right: 121px;
         margin-bottom: 40px;
         color: #907E82;
     }
