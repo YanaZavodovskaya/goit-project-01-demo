@@ -6,6 +6,7 @@
 }
 
 .customer-reviews__photo {
+  display: block;
   width: 85px;
   height: 85px;
   border-radius: 44px;
@@ -127,7 +128,6 @@
 // ---------SWIPER--------------------
 .swiper {
   width: 90%;
-
 }
 
 .swiper-slide {
