@@ -76,6 +76,7 @@
 .customer-reviews__name {
   font-family: var(--primary-font-family);
   font-size: 14px;
+  font-weight: 500;
   line-height: calc(26 / 14 * 100%);
   text-align: center;
   margin-top: 20px;
@@ -95,6 +96,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .customer-reviews__photo {
+   margin-bottom: 20px;
+  }
+
   .customer-reviews__name {
       font-size: 16px;
       margin-bottom: 32px;
@@ -112,6 +117,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .customer-reviews__photo {
+    margin-bottom: 16px;
+   }
+
   .customer-reviews__name {
       font-size: 20px;
   }
