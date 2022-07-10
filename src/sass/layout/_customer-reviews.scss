@@ -23,10 +23,11 @@
   line-height: 255%;
   text-align: center;
   z-index: 2;
-  padding: 50px 0px;
+  padding: 50px 60px;
 }
 
 .customer-reviews__reviews-container {
+  width: 90%;
   position: relative;
   display: flex;
   align-items: center;
@@ -71,6 +72,7 @@
 }
 
 .customer-reviews__name {
+  font-family: DM Sans, sans-serif;
   font-size: 14px;
   line-height: calc(26 / 14 * 100%);
   text-align: center;
@@ -114,7 +116,7 @@
   
   .customer-reviews__reviews {
       font-size: 16px;
-      padding: 45px 140px 50px 140px;
+      padding: 40px 140px 40px 140px;
   }
 
   .customer-reviews__rows {
