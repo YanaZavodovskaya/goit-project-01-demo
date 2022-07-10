@@ -10,7 +10,7 @@
 
 .about__title{
     font-family: var(--secondary-font-family);
-    @include font(34px, 39px, 400);
+    @include font(34px, 40px, 400);
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-accent-color);
@@ -23,7 +23,7 @@
 }
 
 .about__list{
-    display: flex;
+    display: block;
 }
 
 .about__half{
@@ -49,21 +49,20 @@
 }
 
 .about-btn{
-    display: flex;
-    @include font(14px, 18px, 700);
-    align-items: center;
+    width: 176px;
+    height: 44px;
     text-align: center;
-    border: transparent;
-    border-radius: 22px;   
-    cursor: pointer;
-    padding-left: 37px;
-    background-color: var(--text-color-theme-dark);
     color: var(--primary-accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-color: #ECEBEB;
-    }
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3125;
+    display: flex;
+    transition: background-color 300ms var(--primary-cubic-bezier);
+    border-radius: 22px;
 }
 
 
@@ -94,15 +93,16 @@
 
     .about__list{
         display: flex;
+        justify-content: space-between;
     }
 
-    .about__half{
-        margin-right: 32px;
-    }
+    // .about__half{
+    //     margin-right: 32px;
+    // }
 
-    .about__half:last-child{
-        margin-bottom: 0px;
-    }
+    // .about__half:last-child{
+    //     margin-bottom: 0px;
+    // }
 
     .about__half-article-1{
         font-family: var(--primary-font-family);
@@ -119,21 +119,20 @@
     }
 
     .about-btn{
-        display: flex;
-        @include font(16px, 21px, 700);
-        align-items: center;
+        width: 176px;
+        height: 44px;
         text-align: center;
-        border: transparent;
-        border-radius: 22px;   
-        cursor: pointer;
-        padding-left: 37px;
-        background-color: var(--text-color-theme-dark);
         color: var(--primary-accent-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-            background-color: #ECEBEB;
-        }
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3125;
+        display: flex;
+        transition: background-color 300ms var(--primary-cubic-bezier);
+        border-radius: 22px;
     }   
 }
 
@@ -146,7 +145,6 @@
         text-align: center;
         text-transform: uppercase;
         color: var(--secondary-accent-color);
-        margin-top: 60px;
         margin-bottom: 15px;
     }
 
@@ -165,23 +163,23 @@
 
     .about__list{
         display: flex;
+        justify-content: space-between;
     }
 
-    .about__half{
-        margin-right: 99px;
-        padding-left: 15px;
-        padding-bottom: 20px;
-    }
+    // .about__half{
+    //     margin-right: 99px;
+    // }
 
-    .about__half:last-child{
-        padding-top: 90px;
-        padding-right: 121px;
-    }
+    // .about__half:last-child{
+        
+    // }
 
     .about__half-article-1{
         font-family: var(--primary-font-family);
         @include font(16px, 28px);
         text-align: left;
+        margin-top: 90px;
+        margin-bottom: 32px;
         color: #000000;
     }
 
@@ -189,25 +187,26 @@
         font-family: var(--primary-font-family);
         @include font(16px, 28px);
         text-align: left;
+        margin-bottom: 40px;
         color: #907E82;
     }
 
     .about-btn{
-        display: flex;
-        @include font(16px, 21px, 700);
-        align-items: center;
+        width: 176px;
+        height: 44px;
         text-align: center;
-        border: transparent;
-        border-radius: 22px;
-        max-width: 176px;
-        max-height: 44px;   
-        cursor: pointer;
-        margin-bottom: 81px;
-        // padding-left: 38px;
-        // padding-right: 38px;
-        background-color: var(--text-color-theme-dark);
         color: var(--primary-accent-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 81px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3125;
+        display: flex;
+        transition: background-color 300ms var(--primary-cubic-bezier);
+        border-radius: 22px;
+
         &:hover,
         &:focus {
             background-color: #ECEBEB;
