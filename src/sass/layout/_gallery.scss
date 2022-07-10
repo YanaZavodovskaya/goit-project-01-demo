@@ -5,9 +5,13 @@
             var(--text-color-theme-dark) 20%);
 }
 
+.gallery__container {
+    margin: -1px;
+}
+
 .gallery__list {
     @extend %align;
-    margin: -1px;
+
 }
 
 
@@ -21,11 +25,9 @@
 @media screen and(min-width:768px) {
     .gallery {
         height: 327px;
-
     }
 
-    .gallery__list {
-
+    .gallery__container {
         margin: -3px;
     }
 
@@ -40,9 +42,12 @@
 
     }
 
+    .gallery__container {
+        margin: -4px;
+    }
+
     .gallery__list {
         height: 430px;
-        margin: -4px;
     }
 
     .gallery__picture {
