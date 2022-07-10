@@ -39,6 +39,7 @@
     @include font(12px, 19px);
     text-align: left;
     color: #000000;
+    margin-bottom: 40px;
 }
 
 .about__half-article-2{
@@ -46,6 +47,11 @@
     @include font(12px, 19px);
     text-align: left;
     color: #907E82;
+    margin-bottom: 40px;
+}
+
+.about__half-article-2:last-child{
+    margin-bottom: 20px;
 }
 
 .about-btn{
@@ -63,6 +69,7 @@
     display: flex;
     transition: background-color 300ms var(--primary-cubic-bezier);
     border-radius: 22px;
+    border: transparent;
 }
 
 
@@ -96,13 +103,13 @@
         justify-content: space-between;
     }
 
-    // .about__half{
-    //     margin-right: 32px;
-    // }
+    .about__half{
+        margin-right: 32px;
+    }
 
-    // .about__half:last-child{
-    //     margin-bottom: 0px;
-    // }
+    .about__half:last-child{
+        margin-bottom: 0px;
+    }
 
     .about__half-article-1{
         font-family: var(--primary-font-family);
@@ -133,6 +140,7 @@
         display: flex;
         transition: background-color 300ms var(--primary-cubic-bezier);
         border-radius: 22px;
+        border: transparent;
     }   
 }
 
@@ -166,13 +174,13 @@
         justify-content: space-between;
     }
 
-    // .about__half{
-    //     margin-right: 99px;
-    // }
+    .about__half{
+        margin-right: 99px;
+    }
 
-    // .about__half:last-child{
-        
-    // }
+    .about__half:last-child{
+        margin-right: 0px;
+    }
 
     .about__half-article-1{
         font-family: var(--primary-font-family);
@@ -206,6 +214,7 @@
         display: flex;
         transition: background-color 300ms var(--primary-cubic-bezier);
         border-radius: 22px;
+        border: transparent;
 
         &:hover,
         &:focus {
