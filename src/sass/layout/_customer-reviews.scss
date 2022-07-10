@@ -6,6 +6,7 @@
 }
 
 .customer-reviews__photo {
+  display: block;
   width: 85px;
   height: 85px;
   border-radius: 44px;
@@ -34,7 +35,8 @@
   background-color: #FAFAFA;
   margin-bottom: 16px;
   transition: box-shadow 250ms linear;
-    &:hover {
+    &:hover,
+    &:focus {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
 }
@@ -72,7 +74,7 @@
 }
 
 .customer-reviews__name {
-  font-family: DM Sans, sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 14px;
   line-height: calc(26 / 14 * 100%);
   text-align: center;
@@ -127,7 +129,6 @@
 // ---------SWIPER--------------------
 .swiper {
   width: 90%;
-
 }
 
 .swiper-slide {
@@ -156,6 +157,11 @@
   margin-right: 18px;
 }
 
+.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
 
 .swiper-pagination-bullet-active {
   background-image: url(../images/customer/home.svg);
