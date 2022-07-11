@@ -1,0 +1,41 @@
+.footer {
+    padding-top: 40px;
+    background-color: var(--accent-bg-color);
+}
+
+.footer__signature-box {
+    width: 232px;
+}
+
+.footer__signature {
+    margin-bottom: 16px;
+
+    font-family: var(--secondary-font-family);
+    @include font(18px, 21px, 400);
+
+    text-transform: uppercase;
+
+    color: var(--secondary-accent-color);
+}
+
+.footer__signature-part {
+    margin-bottom: 40px;
+
+    font-family: var(--secondary-font-family);
+    @include font(34px, 39px, 400);
+
+    text-transform: uppercase;
+
+    color: var(--primary-accent-color);
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: end;
+}
+
+.footer__social-link {
+    :not(:last-child) {
+        margin-right: 28px;
+    }
+}
