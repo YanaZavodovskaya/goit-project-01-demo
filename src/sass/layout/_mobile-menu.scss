@@ -7,7 +7,7 @@
     min-height: 100vh;
     padding-top: 60px;
     background-color: #E17992;
-
+z-index: 300;
     opacity: 0.3;
     visibility: hidden;
     pointer-events: none;
@@ -18,7 +18,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    z-index: 1;
+   z-index: 300;
     transform: translateX(0);
 }
 
@@ -45,11 +45,12 @@
     margin-left: auto;
     margin-bottom: 12px;
 
-    transition: box-shadow 300ms var(--primary-cubic-bezier);
+    transition: background-color 300ms var(--primary-cubic-bezier);
 
-    &:hover {
-        box-shadow: 0px 0px 5px 5px rgba(212, 20, 68, 0.5), 0px 0px 0px 0px var(--primary-accent-color);
-    }
+        &:hover,
+            &:focus {
+                background-color: #ECEBEB;
+            }
 
 }
 
