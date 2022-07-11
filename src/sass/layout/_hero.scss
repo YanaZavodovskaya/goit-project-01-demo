@@ -3,7 +3,7 @@
   display: block;
 background-color: #ffb8ca;
 position: relative;
-z-index: -5;
+z-index: 10;
 position: relative;
 overflow: hidden;
 }
@@ -53,7 +53,8 @@ overflow: hidden;
 
     transition: background-color 300ms var(--primary-cubic-bezier), color 300ms var(--primary-cubic-bezier);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ECEBEB;
     color: var(--primary-accent-color);
   }
@@ -67,7 +68,8 @@ overflow: hidden;
 
         transition: background-color 300ms var(--primary-cubic-bezier);
         
-            &:hover {
+            &:hover,
+            &:focus {
                 background-color: #ECEBEB;
             }
     
