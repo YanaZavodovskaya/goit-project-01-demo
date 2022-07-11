@@ -1,4 +1,8 @@
 .customer-reviews-container {
+  padding-top: 60px;
+}
+
+.customer-reviews-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -77,7 +81,7 @@
       content: '. . .';
       position: absolute;
       top: 0;
-      left: 40%;
+      left: 35%;
       bottom: 10px;
       font-size: 40px;
       height: 5px;
