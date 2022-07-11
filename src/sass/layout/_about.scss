@@ -38,14 +38,14 @@
 
 .about__list {
     display: block;
-    width: 220px;
+    width: 250px;
 }
 
 .about__half {
     font-family: var(--primary-font-family);
     @include font(12px, 19px);
-    text-align: left;
-    width: 220px;
+    text-align: start;
+    width: 100%;
 
     &:not(:last-child) {
         margin-bottom: 20px;
@@ -128,7 +128,7 @@
 
     .about__half {
         margin-bottom: 40px;
-
+        width: 100%;
         &:not(:last-child) {
             margin-bottom: 60px;
         }
@@ -140,6 +140,10 @@
 
     .about__half-article-2 {
         @include font(14px, 24px);
+        & span {
+            display: block;
+            margin-top: 20px;
+        }
     }
 }
 
@@ -172,12 +176,12 @@
     }
 
     .about__list {
-        width: 100%;
+        width: 463px;
     }
 
     .about__half {
         margin-bottom: 40px;
-
+        width: 100%;
         &:not(:last-child) {
             margin-bottom: 0px;
         }
@@ -188,13 +192,15 @@
         text-align: left;
         margin-top: 90px;
         margin-bottom: 32px;
-        // width: 463px;
     }
 
     .about__half-article-2 {
         @include font(16px, 28px);
         text-align: left;
         margin-bottom: 40px;
-        width: 463px;
+        & span {
+            display: block;
+            margin-top: 20px;
+        }
     }
 }
