@@ -21,6 +21,9 @@
     padding-top: 60px;
     background-color: var(--accent-bg-color);
     background-image: url(../images/about/mobile-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -88,12 +91,18 @@
 
 // TABLET
 @media screen and(min-width:768px) {
+    .about{
+        background-image: url(../images/about/tablet-bg-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     .about .container {
         display: block;
         justify-content: center;
         align-items: center;
         align-content: center;
-        background-image: url(../images/about/tablet-bg-img.png);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -151,6 +160,9 @@
 @media screen and(min-width:1280px) {
     .about {
         background-image: url(../images/about/desktop-bg-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     @media (min-device-pixel-ratio: 2),
